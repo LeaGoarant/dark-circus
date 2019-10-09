@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Dark Circus</title>
+    
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" th:href="@{/style.css}" href="../static/style.css">
+    
+    </head>
+        <body class="container-fluid d-flex flex-column mb-3 justify-content-between">
+            <header>
+    
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" th:href="@{/home}">Dark Circus</a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" th:href="@{/freaks}">Meet our freaks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{/who}">Who are we ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" th:href="@{tour}">Tour dates</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>  
+            </header>
+
+            <h3 class="text-start">Meet three of our odd, freaky monsters.</h3>
+            <br>
+            <p class="text-start">They can't wait to amaze you with their unbelievable talents !</p>
+
+            <div class="d-flex justify-content-around">
+
+                <div class="imghvr-fade">
+                    <figcaption>
+                        <h4 class="text-center">Edward</h4>
+                    </figcaption>
+                    <img src="../static/img/Edward.png" th:src="@{/img/Edward.png}" alt="Edward" id="freaks" type="button" data-target="#Edward">
+                    <div class="modal fade" id="Edward" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="exampleModalLabel">Edward</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imghvr-fade">
+                    <figcaption>
+                        <h4 class="text-center">Maya</h4>
+                    </figcaption>
+                    <img src="../static/img/Maya.png" th:src="@{/img/Maya.png}" alt="Maya" id="freaks">
+                </div>
+                <div class="imghvr-fade">
+                    <figcaption>
+                        <h4 class="text-center">Elizabeth</h4>
+                    </figcaption>
+                    <img src="../static/img/Elizabeth.png" th:src="@{/img/Elizabeth.png}" atl="Elizabeth" id="freaks">
+                </div>
+            </div>
+
+
+        </body>
+</html>
