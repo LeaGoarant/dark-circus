@@ -32,6 +32,26 @@ mvn spring-boot:run
 
 ```
 
+## Resources 
+
+> In order to make this website, we made user stories, a CMD and a wireframe. 
+
+### User stories
+
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613853-user-story.png)
+
+### CMD
+
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613887-bdd.png)
+
+### Wireframe 
+
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613888-page-1.png)
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613887-page-2.png)
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613887-page-3.png)
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613888-page-4.png)
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613887-page-5.png)
+
 ## Author
 
 👤 **Léa Goarant Rocher**
