@@ -38,7 +38,7 @@ mvn spring-boot:run
 
 ### User stories
 
-![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570613853-user-story.png)
+![alt text](https://image.noelshack.com/fichiers/2019/41/3/1570614452-user-story.png)
 
 ### CMD
 
