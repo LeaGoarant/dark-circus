@@ -8,7 +8,7 @@
 
   <a href="https://github.com/WildCodeSchool/reims-0519-java-checkpoint4/" target="_blank">
 
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+   <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
 
   </a>
 
