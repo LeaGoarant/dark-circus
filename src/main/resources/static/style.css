@@ -105,3 +105,22 @@ p{
 .imghvr-fade:hover figcaption {
   opacity: 1;
 }
+
+#edwardLabel, #mayaLabel, #elizabethLabel{
+    margin: 0;
+}
+
+#family{
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.who{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+
