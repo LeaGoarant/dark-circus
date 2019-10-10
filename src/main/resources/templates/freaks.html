@@ -17,7 +17,10 @@
     
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" id="logo" th:href="@{/home}">Dark Circus</a>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon-fas fa-bars"></span>
+                        </button>  
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" th:href="@{/freaks}">Meet our freaks</a>
@@ -33,16 +36,19 @@
                 </nav>  
             </header>
 
+            <div class="container">
             <h3 class="text-start">Meet three of our odd, freaky monsters.</h3>
             <p class="text-start">They can't wait to amaze you with their unbelievable talents !</p>
 
-            <div class="d-flex justify-content-around">
-
+            <div class="row d-flex justify-content-around">
+                
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Edward</h4>
                     </figcaption>
-                    <img src="../static/img/Edward.png" th:src="@{/img/Edward.png}" alt="Edward" id="freaks" data-toggle="modal" data-target="#Edward">
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="../static/img/Edward.png" th:src="@{/img/Edward.png}" alt="Edward" id="freaks" data-toggle="modal" data-target="#Edward">
+                     </div>
                 </div>
                 <div class="modal fade" id="Edward" tabindex="-1" role="dialog" aria-labelledby="edwardLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -60,11 +66,15 @@
                         </div>
                     </div>
                     </div>
+                </div>
+            
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Maya</h4>
                     </figcaption>
-                    <img src="../static/img/Maya.png" th:src="@{/img/Maya.png}" alt="Maya" id="freaks" data-toggle="modal" data-target="#Maya">
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="../static/img/Maya.png" th:src="@{/img/Maya.png}" alt="Maya" id="freaks" data-toggle="modal" data-target="#Maya">
+                    </div>
                 </div>
                 <div class="modal fade" id="Maya" tabindex="-1" role="dialog" aria-labelledby="mayaLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -83,31 +93,35 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Elizabeth</h4>
                     </figcaption>
-                    <img src="../static/img/Elizabeth.png" th:src="@{/img/Elizabeth.png}" alt="Elizabeth" id="freaks" data-toggle="modal" data-target="#Elizabeth">
+                    <div class="col-sm-12 col-lg-4">
+                        <img src="../static/img/Elizabeth.png" th:src="@{/img/Elizabeth.png}" alt="Elizabeth" id="freaks" data-toggle="modal" data-target="#Elizabeth">
+                    </div>
                 </div>
-            </div>
-            <div class="modal fade" id="Elizabeth" tabindex="-1" role="dialog" aria-labelledby="elizabethLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title" id="elizabethLabel">Elizabeth</p>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            Elizabeth, our beautiful, beautiful elastic girl. The most amazing illusionist. Men, don't get 
-                            distracted by the sensual movement of her body. Keep an eye on her, or she will steal your heart 
-                            as easy as she steal the show.
+                    <div class="modal fade" id="Elizabeth" tabindex="-1" role="dialog" aria-labelledby="elizabethLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="elizabethLabel">Elizabeth</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Elizabeth, our beautiful, beautiful elastic girl. The most amazing illusionist. Men, don't get 
+                                    distracted by the sensual movement of her body. Keep an eye on her, or she will steal your heart 
+                                    as easy as she steal the show.
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
             <script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js}" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>       

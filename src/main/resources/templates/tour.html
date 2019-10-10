@@ -16,7 +16,10 @@
             <header>
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" id="logo" th:href="@{/home}">Dark Circus</a>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon-fas fa-bars"></span>
+                        </button>  
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" th:href="@{/freaks}">Meet our freaks</a>
@@ -33,7 +36,7 @@
             </header>
             <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-sm-12 col-lg-6">
                     <h4>Meet us soon in your city</h4>
                     <ul>
                         <li class="dates">04 / 11 / 2019 - Hamburg</li>
@@ -50,7 +53,7 @@
                         <li class="dates">09 / 12 / 2019 - Zurich</li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-12 col-lg-6">
                     <table>
                         <h4>Our prices</h4>
                         <thead>
@@ -76,7 +79,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="col-6">
+                    <div class="col-sm-12 col-lg-6">
                     <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#book">Book your day now</a>
                     <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -139,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-12 col-lg-6">
                     <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#vote">Want to see us for christmas ? - Vote for your city</a>
                 </div>
                 <div class="modal fade" id="vote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
