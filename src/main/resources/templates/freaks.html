@@ -18,7 +18,7 @@
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" id="logo" th:href="@{/home}">Dark Circus</a>
                         <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                            <span class="navbar-toggler-icon-fas fa-bars"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>  
                         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -40,15 +40,13 @@
             <h3 class="text-start">Meet three of our odd, freaky monsters.</h3>
             <p class="text-start">They can't wait to amaze you with their unbelievable talents !</p>
 
-            <div class="row d-flex justify-content-around">
-                
+            <div class="d-flex justify-content-around">
+
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Edward</h4>
                     </figcaption>
-                    <div class="col-sm-12 col-lg-4">
-                        <img src="../static/img/Edward.png" th:src="@{/img/Edward.png}" alt="Edward" id="freaks" data-toggle="modal" data-target="#Edward">
-                     </div>
+                    <img src="../static/img/Edward.png" th:src="@{/img/Edward.png}" alt="Edward" id="freaks" data-toggle="modal" data-target="#Edward">
                 </div>
                 <div class="modal fade" id="Edward" tabindex="-1" role="dialog" aria-labelledby="edwardLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -66,15 +64,11 @@
                         </div>
                     </div>
                     </div>
-                </div>
-            
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Maya</h4>
                     </figcaption>
-                    <div class="col-sm-12 col-lg-4">
-                        <img src="../static/img/Maya.png" th:src="@{/img/Maya.png}" alt="Maya" id="freaks" data-toggle="modal" data-target="#Maya">
-                    </div>
+                    <img src="../static/img/Maya.png" th:src="@{/img/Maya.png}" alt="Maya" id="freaks" data-toggle="modal" data-target="#Maya">
                 </div>
                 <div class="modal fade" id="Maya" tabindex="-1" role="dialog" aria-labelledby="mayaLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -93,30 +87,26 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
                 <div class="imghvr-fade">
                     <figcaption>
                         <h4 class="text-center">Elizabeth</h4>
                     </figcaption>
-                    <div class="col-sm-12 col-lg-4">
-                        <img src="../static/img/Elizabeth.png" th:src="@{/img/Elizabeth.png}" alt="Elizabeth" id="freaks" data-toggle="modal" data-target="#Elizabeth">
-                    </div>
+                    <img src="../static/img/Elizabeth.png" th:src="@{/img/Elizabeth.png}" alt="Elizabeth" id="freaks" data-toggle="modal" data-target="#Elizabeth">
                 </div>
-                    <div class="modal fade" id="Elizabeth" tabindex="-1" role="dialog" aria-labelledby="elizabethLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <p class="modal-title" id="elizabethLabel">Elizabeth</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Elizabeth, our beautiful, beautiful elastic girl. The most amazing illusionist. Men, don't get 
-                                    distracted by the sensual movement of her body. Keep an eye on her, or she will steal your heart 
-                                    as easy as she steal the show.
-                                </div>
+            </div>
+            <div class="modal fade" id="Elizabeth" tabindex="-1" role="dialog" aria-labelledby="elizabethLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="elizabethLabel">Elizabeth</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Elizabeth, our beautiful, beautiful elastic girl. The most amazing illusionist. Men, don't get 
+                            distracted by the sensual movement of her body. Keep an eye on her, or she will steal your heart 
+                            as easy as she steal the show.
                         </div>
                     </div>
                 </div>
