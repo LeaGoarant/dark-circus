@@ -10,11 +10,19 @@ body{
     background-color: rgb(49, 49, 47);
 }
 
-a{
+.nav-link{
     color: #CDC793;
 }
 
-a:hover{
+.nav-link:hover{
+    color: #885506;
+}
+
+#logo{
+    color: #CDC793;
+}
+
+#logo:hover{
     color: #885506;
 }
 
@@ -122,5 +130,18 @@ p{
     margin-right: 40px;
     text-align: justify;
 }
+
+.btn-tickets{
+    background-color: #300B00;
+    color: #CDC793;
+    max-width: 15%;
+    margin-top: 10px;
+    margin-left: 42%;
+}
+.btn-tickets:hover{
+    background-color: #300B00;
+    color: #885506;
+}
+
 
 
