@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" th:href="@{/style.css}" href="../static/style.css">
     
     </head>
-        <body class="container-fluid d-flex flex-column mb-3 justify-content-between">
+        <body>
             <header>
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" id="logo" th:href="@{/home}">Dark Circus</a>
@@ -31,7 +31,7 @@
                     </div>
                 </nav>   
             </header>
-
+            <div class="container">
             <div class="row">
                 <div class="col-6">
                     <h4>Meet us soon in your city</h4>
@@ -76,6 +76,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="col-6">
                     <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#book">Book your day now</a>
                     <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -87,7 +88,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>Here, you book the date you want, payment only in cash at opening of the show.</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-tickets">I book this day</button>
@@ -95,27 +96,65 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-6">
                     <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#vote">Want to see us for christmas ? - Vote for your city</a>
                 </div>
                 <div class="modal fade" id="vote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLabel">Vote for you favorite city</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-tickets">I vote</button>
-                        </div>
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Vote for you favorite city</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form action="#" th:action="@{/vote}" method="post" th:object="${vote}">
+                                <div class="modal-body">
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="London" id="one" class="sr-only"/>
+                                        <label for="one">
+                                            <span aria-hidden="true">London</span>
+                                        </label>
+                                    </div>
+                        
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="Zurich" id="two" class="sr-only"/>
+                                        <label for="two">
+                                            <span aria-hidden="true">Zurich</span>
+                                        </label>
+                                    </div>
+                    
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="Barcelona" id="three" class="sr-only"/>
+                                        <label for="three">
+                                            <span aria-hidden="true">Barcelona</span>
+                                        </label>
+                                    </div>
+                    
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="Manchester" id="four" class="sr-only"/>
+                                        <label for="four">
+                                            <span aria-hidden="true">Manchester</span>
+                                        </label>
+                                    </div>
+                    
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="Nantes" id="five" class="sr-only"/>
+                                        <label for="five">
+                                            <span aria-hidden="true">Nantes</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-tickets">I vote</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
