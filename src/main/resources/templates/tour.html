@@ -15,7 +15,7 @@
         <body class="container-fluid d-flex flex-column mb-3 justify-content-between">
             <header>
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" th:href="@{/home}">Dark Circus</a>
+                    <a class="navbar-brand" id="logo" th:href="@{/home}">Dark Circus</a>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -32,6 +32,90 @@
                 </nav>   
             </header>
 
+            <div class="row">
+                <div class="col-6">
+                    <h4>Meet us soon in your city</h4>
+                    <ul>
+                        <li class="dates">04 / 11 / 2019 - Hamburg</li>
+                        <li class="dates">06 / 11 / 2019 - Berlin</li>
+                        <li class="dates">09 / 11 / 2019 - Bruxelles</li>
+                        <li class="dates">14 / 11 / 2019 - Strasbourg</li>
+                        <li class="dates">15 / 11 / 2019 - Reims</li>
+                        <li class="dates">18 / 11 / 2019 - Paris</li>
+                        <li class="dates">24 / 11 / 2019 - Bordeaux</li>
+                        <li class="dates">30 / 11 / 2019 - Biarritz</li>
+                        <li class="dates">02 / 12 / 2019 - Marseille</li>
+                        <li class="dates">05 / 12 / 2019 - Grenoble</li>
+                        <li class="dates">06 / 12 / 2019 - Genève</li>
+                        <li class="dates">09 / 12 / 2019 - Zurich</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <table>
+                        <h4>Our prices</h4>
+                        <thead>
+                            <tr>
+                            <th></th>
+                            <td>Adults (+16yo)</td>
+                            <td>Children</td>
+                            <td>Groups (+10 people)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th>All Weeks (except Wed)</th>
+                            <td>12€</td>
+                            <td>9€</td>
+                            <td>8€ / person</td>
+                            </tr>
+                        <tr>
+                            <th>Wednesday & Week-Ends</th>
+                            <td>15€</td>
+                            <td>12€</td>
+                            <td>10€ / person</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#book">Book your day now</a>
+                    <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">Choose your dates</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-tickets">I book this day</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a role="button" class="btn btn-tickets" id="reservation" data-toggle="modal" data-target="#vote">Want to see us for christmas ? - Vote for your city</a>
+                </div>
+                <div class="modal fade" id="vote" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Vote for you favorite city</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-tickets">I vote</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

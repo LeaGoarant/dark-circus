@@ -31,10 +31,10 @@ body{
     color: #CDC793;
 }
 
-h4, h3, p{
+h4, h3, p, .dates{
     color: #CDC793;
 }
-h3{
+h3, h4, .dates{
     margin-top: 15px;
     margin-left: 20px;
 }
@@ -42,6 +42,13 @@ p{
     margin-left: 20px;
     margin-bottom: 30px;
 }
+
+.dates{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
 
 #freaks{
     max-height: 422px;
@@ -134,14 +141,53 @@ p{
 .btn-tickets{
     background-color: #300B00;
     color: #CDC793;
-    max-width: 15%;
-    margin-top: 10px;
-    margin-left: 42%;
 }
 .btn-tickets:hover{
     background-color: #300B00;
     color: #885506;
 }
 
+table{
+    padding: 20px;
+    border-style: none;
+    border-width: 1px;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-right: 20px;
+    margin-top: 10%;
+}
 
+thead{
+    text-align: center;
+    padding: 10px;
+    color: #885506;
+    background-color: #300B00;
+}
+tbody{
+    text-align: center;
+    font-size: 15px;
+}
+th{
+    border-style: solid;
+    border-width: 1px;
+    empty-cells: hide;
+    padding: 10px;
+    color: #885506;
+    background-color: #300B00;
+}
+td{
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    color: #CDC793;
+}
+
+#reservation{
+    margin-top: 20%;
+    color: #CDC793;
+}
+#reservation:hover{
+    margin-top: 20%;
+    color: #885506;
+}
 
