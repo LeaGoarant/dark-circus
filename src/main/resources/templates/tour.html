@@ -58,7 +58,7 @@
                             <th></th>
                             <td>Adults (+16yo)</td>
                             <td>Children</td>
-                            <td>Groups (+10 people)</td>
+                            <td>Groups (10 people max)</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -89,10 +89,52 @@
                             </div>
                             <div class="modal-body">
                                 <p>Here, you book the date you want, payment only in cash at opening of the show.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-tickets">I book this day</button>
-                            </div>
+                                <form action="#" th:action="@{/reservation}" method="post" th:object="${reservation}">                   
+                                    
+                                    <input class="form-control" type="text" placeholder="Firstname *" name="firstname" required>
+                                    <br>
+                                    <input class="form-control" type="text" placeholder="Lastname *" name="lastname" required>
+                                    <br>
+                                    <input class="form-control" type="email" placeholder="E-mail *" name="mail" required>
+                                    <br>
+
+                                    <label for="date">Date</label>
+                                    <select name="city" id="date">
+                                        <option value="hamburg">04 / 11 / 2019 - Hamburg</option>
+                                        <option value="berlin">06 / 11 / 2019 - Berlin</option>
+                                        <option value="bruxelles">09 / 11 / 2019 - Bruxelles</option>
+                                        <option value="strasbourg">14 / 11 / 2019 - Strasbourg</option>
+                                        <option value="reims">15 / 11 / 2019 - Reims</option>
+                                        <option value="paris">18 / 11 / 2019 - Paris</option>
+                                        <option value="bordeaux">24 / 11 / 2019 - Bordeaux</option>
+                                        <option value="biarritz">30 / 11 / 2019 - Biarritz</option>
+                                        <option value="marseille">02 / 12 / 2019 - Marseille</option>
+                                        <option value="grenoble">05 / 12 / 2019 - Grenoble</option>
+                                        <option value="geneve">06 / 12 / 2019 - Genève</option>
+                                        <option value="zurich">09 / 12 / 2019 - Zurich</option>
+                                    </select>
+                                    <br>
+                                    <label for="tickets">Number of tickets</label>
+                                    <select name="number" id="tickets">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    <br>
+                                    <input class="form-control" type="text" placeholder="Precise own many kids and adults" name="type" required>
+                                    
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-tickets" onClick="Alert()">I book this day</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -145,6 +187,12 @@
                                             <span aria-hidden="true">Nantes</span>
                                         </label>
                                     </div>
+                                    <div class="d-flex flex-row">
+                                        <input type="radio" name="city" value="La-Rochelle" id="six" class="sr-only"/>
+                                        <label for="six">
+                                            <span aria-hidden="true">La Rochelle</span>
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-tickets">I vote</button>
@@ -157,7 +205,12 @@
         </div>
 
 
-
+        <script type="text/javascript">
+            function Alert(){
+                const book = "Your reservation has been saved";
+                alert(book);
+            }
+        </script>
 
         <script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js}" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

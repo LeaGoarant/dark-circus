@@ -11,19 +11,25 @@ public class Reservation{
     public Reservation(){
     }
     
-    public Reservation(Long id, String city, int number, int price){
+    public Reservation(Long id, String firstname, String lastname, String mail, String city, int number, String type){
         this.id = id;
         this.city = city;
         this.number = number; 
-        this.price = price;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.mail = mail;
+        this.type = type;
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String firstname;
+    private String lastname;
+    private String mail;
     private String city;
     private int number;
-    private int price;
+    private String type;
 
     public Long getId() {
         return id;
@@ -48,11 +54,36 @@ public class Reservation{
     public void setNumber(int number) {
         this.number = number;
     }
-    public int getPrice() {
-        return price;
+
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
